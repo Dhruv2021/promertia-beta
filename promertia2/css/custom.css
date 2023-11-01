@@ -1,0 +1,32 @@
+/* Style the scrollbar track */
+body::-webkit-scrollbar {
+    width: 3px; /* Set the width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+body::-webkit-scrollbar-thumb {
+    background-color: #2c2cce; /* Set the color of the thumb */
+    border-radius: 10px; /* Add rounded corners to the thumb */
+}
+
+/* Style the scrollbar track on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #fff; /* Change the color on hover */
+}
+
+
+.custom-cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #fff; /* Set the background color */
+    border: 2px solid #fff; /* Set the border color */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Ensure the cursor doesn't interfere with other elements */
+    transform: translate(-50%, -50%); /* Center the cursor on the pointer */
+    transition: all 0.1s ease; /* Add a smooth transition effect */
+}
+/* Hide the custom cursor on click */
+.custom-cursor:active {
+    display: none;
+}
